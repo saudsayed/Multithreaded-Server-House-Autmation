@@ -1,0 +1,330 @@
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.pd-0 {
+    padding: 0 !important;
+}
+
+.pdT-0 {
+    padding-top: 0 !important;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pdT-5 {
+    padding-top: 5px;
+}
+
+.pdT-10 {
+    padding-top: 10px;
+}
+
+.pdT-20 {
+    padding-top: 20px;
+}
+
+.pdb-10 {
+    padding-bottom: 10px;
+}
+
+.pdB-0 {
+    padding-bottom: 0px;
+}
+
+.pdB-5 {
+    padding-bottom: 5px;
+}
+
+.pdB-10 {
+    padding-bottom: 10px;
+}
+
+.pdL-5 {
+    padding-left: 5px;
+}
+
+.pdL-10 {
+    padding-left: 10px;
+}
+
+.pdL-15 {
+    padding-left: 15px;
+}
+
+.pdL-20 {
+    padding-left: 20px;
+}
+
+.pdL-0 {
+    padding-left: 0;
+}
+
+.pdR-0 {
+    padding-right: 0;
+}
+
+.pdR-5 {
+    padding-right: 5px !important;
+}
+
+.pdR-15 {
+    padding-right: 15px;
+}
+
+.mr-0 {
+    margin: 0 !important;
+}
+
+.mrB-0 {
+    margin-bottom: 0px;
+}
+
+.mrB-15 {
+    margin-bottom: 15px;
+}
+
+.mrB-20 {
+    margin-bottom: 20px;
+}
+
+.mrL-20 {
+    margin-left: 20px !important;
+}
+
+.mrL-30 {
+    margin-left: 30px !important;
+}
+
+.mrB-10 {
+    margin-bottom: 10px;
+}
+
+.mrR-5 {
+    margin-right: 5px;
+}
+
+.mrR-10 {
+    margin-right: 10px;
+}
+
+.mrT-0 {
+    margin-top: 0px;
+}
+
+.mrT-5 {
+    margin-top: 5px;
+}
+
+.mrT-10 {
+    margin-top: 10px;
+}
+
+.mrT-15 {
+    margin-top: 15px;
+}
+
+.mrT-20 {
+    margin-top: 20px;
+}
+
+.mrL-10 {
+    margin-left: 10px;
+}
+
+.mrL-5 {
+    margin-left: 5px;
+}
+
+.mrL-15 {
+    margin-left: 15px;
+}
+
+.mrL-20 {
+    margin-left: 20px;
+}
+
+.mrT-20 {
+    margin-top: 20px;
+}
+
+.mrT-30 {
+    margin-top: 30px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+#myTabContent {
+    transition: all 1s ease;
+}
+
+.curtain {
+    height: 150px;
+    background-color: grey;
+    transition: all 1s ease;
+    background-image: linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, .25) 50%, transparent 65%);
+    background-repeat: repeat;
+    box-shadow: 0 0 10px #555, inset 0 -60px 60px -30px rgba(255, 255, 255, 0.5), inset 0 90px 60px -30px rgba(0, 0, 0, 0.5);
+    background-size: 80px;
+}
+
+.curtain.open {
+    width: 0 !important;
+}
+
+.lights {
+    height: 50px;
+    transform: rotate(180deg);
+}
+
+.ac {
+    border: 1px solid #ddd;
+    height: 200px;
+    width: 250px;
+}
+
+.ac-header {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    background-color: #fbb8b8;
+}
+
+.mode {
+    text-align: right;
+    padding-right: 20px;
+    /* color: green; */
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    background-color: #f2ecec;
+}
+
+.color-green {
+    color: green;
+}
+
+.ac-line {
+    margin: 5px 5px;
+    border: 1px solid #ddd;
+}
+
+
+/*  Spinner for Input Temperature*/
+
+.spinner {
+    width: 100px;
+    margin-bottom: 13px;
+}
+
+.spinner input {
+    text-align: right;
+}
+
+.input-group-btn-vertical {
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.input-group-btn-vertical>.btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    margin-left: -1px;
+    position: relative;
+    border-radius: 0;
+}
+
+.input-group-btn-vertical>.btn:first-child {
+    border-top-right-radius: 4px;
+}
+
+.input-group-btn-vertical>.btn:last-child {
+    margin-top: -2px;
+    border-bottom-right-radius: 4px;
+}
+
+.input-group-btn-vertical i {
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+.glyphicon-plus {
+    margin-top: 3px;
+    font-size: 10px !important;
+}
+
+.glyphicon-minus {
+    margin-top: 4px;
+    font-size: 10px !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+.area-border {
+    border: 1px solid #ddd;
+    padding: 0px 0 20px 0;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+
+/* Wrapper for page content to push down footer */
+
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+
+/* Set the fixed height of the footer here */
+
+#footer {
+    height: 60px;
+    background-color: #f5f5f5;
+}

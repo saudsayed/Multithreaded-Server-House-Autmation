@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>House Automation - Future is here!</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">House Automation</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+            </div>
+        </div>
+    </nav>
+    <div id="wrap" class="container mrT-20">
+        <div class="jumbotron">
+            <h1 class="display-3">House, Automation - Future is here!</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non est ligula. Quisque congue et eros nec egestas. Curabitur sit amet eros id lorem pretium facilisis. In hendrerit bibendum est. Proin lacinia condimentum libero at venenatis.
+                Duis feugiat interdum rhoncus. Phasellus nec volutpat velit. Morbi elit nulla, dictum quis nisi non, ullamcorper hendrerit dui. Proin augue tellus, sollicitudin a efficitur a, ullamcorper eget mi. Cras tincidunt libero et urna tincidunt,
+                quis interdum dolor sodales.</p>
+            <hr class="my-4">
+            <p>Learn more about the future.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="exTab2" class="container">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item active">
+                            <a class="nav-link" data-toggle="tab" href="#livingArea">Living Area</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#bedroom">Bedroom</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#kitchen">Kitchen</a>
+                        </li>
+                    </ul>
+
+                    <div id="myTabContent" class="tab-content mrB-20">
+                        <div class="tab-pane fade active in" id="livingArea">
+                            <div class="row mrT-10">
+                                <div class="col-lg-3">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">Living Area</div>
+                                        <div class="panel-body">
+                                            <div class="row border-bottom mrB-10">
+                                                <div class="col-xs-12">
+                                                    <h5 class="card-title mr-0">Curtains</h5>
+                                                    <fieldset>
+                                                        <div class="form-group mr-0">
+                                                            <div class="checkbox">
+                                                                <label>
+                                    <input type="checkbox" checked area="livingArea" class="curtainState"> Open
+                                  </label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row border-bottom mrB-10">
+                                                <div class="col-xs-12">
+                                                    <h5 class="card-title mr-0">Lights</h5>
+                                                    <fieldset>
+                                                        <div class="form-group mr-0">
+                                                            <div class="checkbox">
+
+                                                                <label>
+                                      <input type="checkbox" checked area="livingArea" class="lightState"> ON
+                                    </label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom mrB-10">
+                                                <div class="col-xs-12">
+                                                    <h5 class="card-title mr-0">A/C</h5>
+                                                    <fieldset>
+                                                        <div class="form-group mr-0 pull-left">
+                                                            <label class="col-form-label" for="lightState"><b>State</b></label>
+                                                            <div class="checkbox">
+                                                                <label>
+                                      <input type="checkbox" checked area="livingArea" class="acState"> ON
+                                    </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mr-0 pull-left">
+                                                            <label class="col-form-label" for="inputDefault"><b>Temperature <sup>&deg</sup> F</b></label>
+                                                            <!-- <input type="text" class="form-control" value="50" min="20" max="85" readonly /> -->
+                                                            <div class="input-group spinner">
+                                                                <input type="text" class="form-control pdR-5 input-spinner" value="50" min="20" max="85" readonly="">
+                                                                <div class="input-group-btn-vertical">
+                                                                    <button class="btn btn-default" area="livingArea" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+                                                                    <button class="btn btn-default" area="livingArea" type="button"><i class="glyphicon glyphicon-minus"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-9 area-border">
+                                    <h4 class="text-center">Living Area</h4>
+                                    <div class="col-lg-12 pull-left">
+                                        <div class="col-lg-6 pull-left curtain"></div>
+                                        <div class="col-lg-6 pull-right curtain"></div>
+                                    </div>
+                                    <div class="col-lg-12 pull-left mrT-20">
+                                        <!-- <p>Lights</p> -->
+                                        <div class="col-lg-6 text-right">
+                                            <img src="images/lighton.gif" class="lights" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 pull-left mrT-20">
+                                        <!-- <p>A/C</p> -->
+                                        <div class="pull-left">
+                                            <div class="ac">
+                                                <div class="ac-header">GE A/C</div>
+                                                <div class="mode"><span>Mode: Cool</span>
+                                                    <i class="mrL-20"><b><span class="state color-green">ON</span></b></i>
+                                                </div>
+                                                <div class="mode"><span>Temperature</span>
+                                                    <i class="mrL-20"><b><span class="temp ">80</span><sup>&deg</sup>F</b></i>
+                                                </div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bedroom">
+                            <div class="row mrT-10">
+                                <div class="col-lg-3">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">Bedroom</div>
+                                        <div class="panel-body">
+                                            <div class="row border-bottom mrB-10">
+                                                <div class="col-xs-12">
+                                                    <h5 class="card-title mr-0">Curtains</h5>
+                                                    <fieldset>
+                                                        <div class="form-group mr-0">
+                                                            <div class="checkbox">
+                                                                <label>
+                                    <input type="checkbox" checked area="bedroom" class="curtainState"> Open
+                                  </label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row border-bottom mrB-10">
+                                                <div class="col-xs-12">
+                                                    <h5 class="card-title mr-0">Lights</h5>
+                                                    <fieldset>
+                                                        <div class="form-group mr-0">
+                                                            <div class="checkbox">
+
+                                                                <label>
+                                      <input type="checkbox" checked area="bedroom" class="lightState"> ON
+                                    </label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom mrB-10">
+                                                <div class="col-xs-12">
+                                                    <h5 class="card-title mr-0">A/C</h5>
+                                                    <fieldset>
+                                                        <div class="form-group mr-0 pull-left">
+                                                            <label class="col-form-label" for="lightState"><b>State</b></label>
+                                                            <div class="checkbox">
+                                                                <label>
+                                      <input type="checkbox" checked area="bedroom" class="acState"> ON
+                                    </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mr-0 pull-left">
+                                                            <label class="col-form-label" for="inputDefault"><b>Temperature <sup>&deg</sup> F</b></label>
+                                                            <!-- <input type="text" class="form-control" value="50" min="20" max="85" readonly /> -->
+                                                            <div class="input-group spinner">
+                                                                <input type="text" class="form-control pdR-5 input-spinner" value="50" min="20" max="85" readonly="">
+                                                                <div class="input-group-btn-vertical">
+                                                                    <button class="btn btn-default" area="bedroom" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+                                                                    <button class="btn btn-default" area="bedroom" type="button"><i class="glyphicon glyphicon-minus"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-9 area-border">
+                                    <h4 class="text-center">Bedroom</h4>
+                                    <div class="col-lg-12 pull-left">
+                                        <div class="col-lg-6 pull-left curtain"></div>
+                                        <div class="col-lg-6 pull-right curtain"></div>
+                                    </div>
+                                    <div class="col-lg-12 pull-left mrT-20">
+                                        <!-- <p>Lights</p> -->
+                                        <div class="col-lg-6 text-right">
+                                            <img src="images/lighton.gif" class="lights" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 pull-left mrT-20">
+                                        <!-- <p>A/C</p> -->
+                                        <div class="pull-left">
+                                            <div class="ac">
+                                                <div class="ac-header">GE A/C</div>
+                                                <div class="mode"><span>Mode: Cool</span>
+                                                    <i class="mrL-20"><b><span class="state color-green">ON</span></b></i>
+                                                </div>
+                                                <div class="mode"><span>Temperature</span>
+                                                    <i class="mrL-20"><b><span class="temp ">80</span><sup>&deg</sup>F</b></i>
+                                                </div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                                <div class="ac-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="kitchen">
+                            <div class="row mrT-10">
+                                <div class="col-lg-3">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">Kitchen</div>
+                                        <div class="panel-body">
+                                            <div class="row border-bottom mrB-10">
+                                                <div class="col-xs-12">
+                                                    <h5 class="card-title mr-0">Lights</h5>
+                                                    <fieldset>
+                                                        <div class="form-group mr-0">
+                                                            <div class="checkbox">
+
+                                                                <label>
+                                      <input type="checkbox" checked area="kitchen" class="lightState"> ON
+                                    </label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-9 area-border">
+                                    <h4 class="text-center">Kitchen</h4>
+                                    <div class="col-lg-12 pull-left mrT-20">
+                                        <!-- <p>Lights</p> -->
+                                        <div class="col-lg-6 text-right">
+                                            <img src="images/lighton.gif" class="lights" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  Footer Starts -->
+    <div id="footer">
+        <div class="container text-center">
+            <p class="text-muted credit mrT-20"><span class="glyphicon glyphicon-copyright-mark"></span> Copyright, 2018 - House Automation <a target="_blank" href="">(www.HouseAutomation.com)</a></p>
+        </div>
+    </div>
+    <!-- Footer Ends -->
+    <!-- <input type="file" class="image"/> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //load data from JSON
+            loadDataFromJSON();
+            //Script for Increase and decrease Temperature
+            (function($) {
+                $('.spinner .btn:first-of-type').on('click', function() {
+                    var input = $(this).parent().parent().children('input');
+                    var parent = $(this).attr('area');
+                    if (parseInt(input.val(), 10) + 1 < 85) {
+                        var newvalue = parseInt(input.val(), 10) + 1;
+                        input.val(newvalue);
+                        $("#" + parent + " .temp").text(newvalue);
+                        changeTempInServer(parent, newvalue);
+                    }
+
+                });
+                $('.spinner .btn:last-of-type').on('click', function() {
+                    var input = $(this).parent().parent().children('input');
+                    var parent = $(this).attr('area');
+                    var newvalue = parseInt(input.val(), 10) - 1;
+                    if (newvalue >= 20) {
+                        input.val(newvalue);
+                        $("#" + parent + " .temp").text(newvalue);
+                        changeTempInServer(parent, newvalue);
+                    }
+
+                });
+            })(jQuery);
+
+            //Function to update A/C Temperature in Server
+            function changeTempInServer(parent, newvalue) {
+                if (parent == "livingArea") {
+                    houseAutmation.livingArea.AC.temp = newvalue;
+                } else if (parent == "bedroom") {
+                    houseAutmation.bedroom.AC.temp = newvalue;
+                }
+            }
+
+            //function when click on curtainState
+            $("#myTabContent .curtainState").on('click', function() {
+                var parent = $(this).attr('area');
+                $("#" + parent + " .curtain").toggleClass("open");
+                if ($("#" + parent + " .curtain").hasClass("open")) {
+                    changeCurtainInServer(parent, "OFF")
+                } else {
+                    changeCurtainInServer(parent, "ON")
+                }
+            });
+
+            //function to change Curtain state in Server
+            function changeCurtainInServer(parent, newvalue) {
+                if (parent == "livingArea") {
+                    houseAutmation.livingArea.curtain.state = newvalue;
+                } else if (parent == "bedroom") {
+                    houseAutmation.bedroom.curtain.state = newvalue;
+                }
+            }
+            //Function when clock on lights
+            $("#myTabContent .lightState").on('click', function() {
+                var parent = $(this).attr('area');
+                if ($(this).prop("checked")) {
+                    $("#" + parent + " .lights").attr("src", "images/lighton.gif");
+                    changeLighstInServer(parent, "ON")
+                } else {
+                    $("#" + parent + " .lights").attr("src", "images/lightoff.gif");
+                    changeLighstInServer(parent, "OFF")
+                }
+
+            });
+
+            //function to change lights state in Server
+            function changeLighstInServer(parent, newvalue) {
+                if (parent == "livingArea") {
+                    houseAutmation.livingArea.light.state = newvalue;
+                } else if (parent == "bedroom") {
+                    houseAutmation.bedroom.light.state = newvalue;
+                } else if (parent == "kitchen") {
+                    houseAutmation.kitchen.light.state = newvalue;
+                }
+            }
+
+
+            //function when click on A/C
+            $("#myTabContent .acState").on('click', function() {
+                var parent = $(this).attr('area');
+                if ($(this).prop("checked")) {
+                    $("#" + parent + " .ac .state").text("ON");
+                    changeACStateInServer(parent, "ON");
+                } else {
+                    $("#" + parent + " .ac .state").text("OFF");
+                    changeACStateInServer(parent, "OFF");
+                }
+
+
+            });
+
+            //function to change A/C state in Server
+            function changeACStateInServer(parent, newvalue) {
+                if (parent == "livingArea") {
+                    houseAutmation.livingArea.AC.state = newvalue;
+                } else if (parent == "bedroom") {
+                    houseAutmation.bedroom.AC.state = newvalue;
+                }
+            }
+
+        });
+
+        function loadDataFromJSON() {
+            console.log(houseAutmation);
+            //Load data for Curtain
+            if (houseAutmation.livingArea.curtain.state == "Open") {
+                $("#livingArea .curtainState").prop("checked", true);
+                $("#livingArea .curtain").removeClass("open");
+            } else {
+                $("#livingArea .curtainState").prop("checked", false);
+                $("#livingArea .curtain").addClass("open");
+            }
+
+            if (houseAutmation.bedroom.curtain.state == "Open") {
+                $("#bedroom .curtainState").prop("checked", true);
+                $("#bedroom .curtain").removeClass("open");
+            } else {
+                $("#bedroom .curtainState").prop("checked", false);
+                $("#bedroom .curtain").addClass("open");
+            }
+
+            //Load data for Lights
+            if (houseAutmation.livingArea.light.state == "ON") {
+                $("#livingArea .lightState").prop("checked", true);
+                $("#livingArea .lights").attr("src", "images/lighton.gif");
+            } else {
+                $("#livingArea .lightState").prop("checked", false);
+                $("#livingArea .lights").attr("src", "images/lightoff.gif");
+            }
+
+            if (houseAutmation.bedroom.light.state == "ON") {
+                $("#bedroom .lightState").prop("checked", true);
+                $("#bedroom .lights").attr("src", "images/lighton.gif");
+            } else {
+                $("#bedroom .lightState").prop("checked", false);
+                $("#bedroom .lights").attr("src", "images/lightoff.gif");
+            }
+
+            if (houseAutmation.kitchen.light.state == "ON") {
+                $("#kitchen .lightState").prop("checked", true);
+                $("#kitchen .lights").attr("src", "images/lighton.gif");
+            } else {
+                $("#kitchen .lightState").prop("checked", false);
+                $("#kitchen .lights").attr("src", "images/lightoff.gif");
+            }
+
+            //Load data for A/C
+            if (houseAutmation.livingArea.AC.state == "ON") {
+                $("#livingArea .acState").prop("checked", true);
+                $("#livingArea .ac .state").text("ON");
+            } else {
+                $("#livingArea .acState").prop("checked", false);
+                $("#livingArea .ac .state").text("OFF");
+            }
+
+            $("#livingArea .input-spinner").val(houseAutmation.livingArea.AC.temp);
+            $("#livingArea .ac .temp").text(houseAutmation.livingArea.AC.temp);
+
+            if (houseAutmation.bedroom.AC.state == "ON") {
+                $("#bedroom .acState").prop("checked", true);
+                $("#bedroom .ac .state").text("ON");
+            } else {
+                $("#bedroom .acState").prop("checked", false);
+                $("#bedroom .ac .state").text("OFF");
+            }
+
+            $("#bedroom .input-spinner").val(houseAutmation.bedroom.AC.temp);
+            $("#bedroom .ac .temp").text(houseAutmation.bedroom.AC.temp);
+
+        }
+    </script>
+</body>
+
+</html>
